@@ -157,3 +157,14 @@ $ export kubever=$(kubectl version | base64 | tr -d '\n')
 $ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
 ```
 Run `kubectl get nodes` to check the ready state
+
+### Check kubernetes using helpful GUI
+```
+# Run this docker container
+
+```
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    portainer/portainer-ce:2.9.3
+```

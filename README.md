@@ -11,7 +11,7 @@ Agent node:
 ### Set up docker and k8 on master and agent nodes:
 -----------------------
 On both the master and agent nodes.
-[Source](https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/)
+[Website source for setting up K8](https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/)
 
 **Step 1: Install Kubernetes Servers**
 ```

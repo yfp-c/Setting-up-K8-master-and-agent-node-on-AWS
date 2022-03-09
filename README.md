@@ -149,3 +149,11 @@ kubeadm join 10.0.10.84:6443 --token tna5wy.kwuwvje2h213adasda \
 ```
 
 On the master node, enter `kubectl get nodes` to see if the worker node is connected.
+
+### Setting Ready state
+SSH into master node and run the commands:
+```
+$ export kubever=$(kubectl version | base64 | tr -d '\n')
+$ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+```
+Run `kubectl get nodes` to check the ready state

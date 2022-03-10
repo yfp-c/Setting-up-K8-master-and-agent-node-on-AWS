@@ -172,6 +172,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
 ### Creating new join tokens for worker nodes
 Tokens expire after 24 hours so to generate a new token enter
 ```
+```
 kubeadm token create --print-join-command
 
 # There should be an output like this

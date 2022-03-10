@@ -168,3 +168,13 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
     -v /var/run/docker.sock:/var/run/docker.sock \
     portainer/portainer-ce:2.9.3
 ```
+
+### Creating new join tokens for worker nodes
+Tokens expire after 24 hours so to generate a new token enter
+```
+kubeadm token create --print-join-command
+
+# There should be an output like this
+
+kubeadm join 192.168.10.15:6443 --token l946pz.6fv0XXXXX8zry --discovery-token-ca-cert-hash sha256:e1e6XXXXXXXXXXXX9ff2aa46bf003419e8b508686af8597XXXXXXXXXXXXXXXXXXX
+```

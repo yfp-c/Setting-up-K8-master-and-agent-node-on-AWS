@@ -13,7 +13,7 @@ Agent node:
 On both the master and agent nodes.
 [Website source for setting up K8](https://computingforgeeks.com/deploy-kubernetes-cluster-on-ubuntu-with-kubeadm/)
 
-**Step 1: Install Kubernetes Servers**
+**Step 1: Packages update and upgrade**
 ```
 sudo apt update
 sudo apt -y upgrade && sudo systemctl reboot
